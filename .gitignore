@@ -1,7 +1,21 @@
-# Ignore virtual environment
+# Ignore everything
+*
+
+# But keep these specific files
+!app.py
+!preprocess_dataset.py
+!prepare_dataset.py
+!train_model.py
+!requirements.txt
+!README.md
+!.gitignore
+
+# Ignore virtual environment and cache folders
 venv/
 __pycache__/
 results/
+
+# Ignore model and binary files
 *.pt
 *.safetensors
 *.dll
