@@ -7,7 +7,7 @@ import time
 # --------------------------
 # Load model and tokenizer
 # --------------------------
-MODEL_PATH = "trained_model"
+MODEL_PATH = "https://huggingface.co/RohitSK146/mental_health_companion"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH)
 
