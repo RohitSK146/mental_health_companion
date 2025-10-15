@@ -20,3 +20,5 @@ results/
 *.safetensors
 *.dll
 *.lib
+# Streamlit secrets
+.streamlit/secrets.toml
