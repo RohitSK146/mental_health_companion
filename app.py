@@ -15,8 +15,7 @@ from huggingface_hub import login
 hf_token = st.secrets["HUGGINGFACE_TOKEN"]
 login(hf_token)
 
-hf_token = st.secrets["HUGGINGFACE_TOKEN"]
-login(hf_token)
+
 MODEL_PATH = "RohitSK146/mental_health_companion"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH,use_auth_token=hf_token)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH,use_auth_token=hf_token)
